@@ -1,6 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 function Contact() {
+
+  const form =useRef();
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_evv46ei', 'template_sgi59js', form.current, {
+        publicKey: 'NFFLKetnWMG5P3qum',
+      })
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log( error.text);
+        },
+      );
+      e.target.reset()
+  };
+
   return (
     <section id='contact' className='lg:section py-16 '>
       <div className='container mx-auto p-5'>
@@ -15,15 +39,15 @@ function Contact() {
             </div>
           </div>
           
-          <form className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-            <input className='bg-transparent   border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' placeholder=' Enter Your Mail' type="text" />
-            <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' placeholder=' Enter Your Name' type="text" />
-            <textarea className='resize-none mb-12 bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' placeholder=' Enter Your message' name="" id="" cols="30" rows="0"></textarea>
-            <button className='btn btn-lg'>Send messages</button>
+          <form ref={form} onSubmit={sendEmail} className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
+            <input name='user_email' className='bg-transparent   border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' placeholder=' Enter Your Mail' type="text" />
+            <input name='user_name'  className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' placeholder=' Enter Your Name' type="text" />
+            <textarea name='message' className='resize-none mb-12 bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' placeholder=' Enter Your message'  id="" cols="30" rows="0"></textarea>
+            <button className='btn btn-lg' type='submit'>Send messages</button>
           </form>
           
 
-
+      
 
         </div>
 

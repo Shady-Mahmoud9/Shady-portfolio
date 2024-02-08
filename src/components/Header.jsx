@@ -10,7 +10,9 @@ function Header() {
             <h1 className='text-gradient text-2xl md:text-4xl font-bold font-secondary'>Shady</h1>
             <h1 className='text-white text-2xl md:text-4xl font-bold font-secondary'>Mahmoud</h1>
           </div>
-          <button className='btn btn-lg '>Work With Me</button>
+          <a href="#contact">
+            <button className='btn btn-lg '>Work With Me</button>
+           </a>
         </div>
       </div>
     </div>

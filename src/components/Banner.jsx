@@ -44,7 +44,9 @@ function Banner() {
                   
           <div className='flex max-w-max lg:mx-0 mx-auto  gap-x-6 items-center mb-16'>
                    
-                <button className='btn btn-lg text-xl'>Contact With Me</button>
+          <a href="#contact">
+            <button className='btn btn-lg '>Work With Me</button>
+           </a>
                 <a href="#!" className='text-gradient btn-link text-2xl'>My portfolio</a>
                  
           </div>

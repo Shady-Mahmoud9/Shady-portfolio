@@ -23,7 +23,7 @@ function Services() {
   ]
   return (
     <section id='services' className='section mt-40'>
-  <div className='container mx-auto p-5 lg:p-0'>
+  <div className='container mx-auto p-5'>
     <div className='flex flex-col lg:flex-row'>
       <div className='flex-1 bg-services bg-bottom bg-no-repeat mix-blend-lighten mb-16 lg:mb-0'>
         <h2 className='h2 text-accent mb-6'>What I Do </h2>
@@ -39,10 +39,10 @@ function Services() {
               <p className=' font-secondary leading-tight'>{service.text}</p>
             </div>
             <div className='flex flex-col flex-1 items-end'>
-              <a href="#" className='btn w-10 h-10 mb-[40px] flex justify-center items-center'>
+              <a href="#!" className='btn w-10 h-10 mb-[40px] flex justify-center items-center'>
                 <BsArrowUpRight/>
               </a>
-              <a href="#" className='text-gradient text-base'>Learn more</a>
+              <a href="#!" className='text-gradient text-base'>Learn more</a>
             </div>
            </div>
         ))}

@@ -6,14 +6,14 @@ function Projects() {
   return (
     <section id='projects' className='section'>
       <div className='container mx-auto p-5'>
-        <div className='flex flex-col lg:flex-row gap-x-10 '>
+        <div className='flex items-end flex-col lg:flex-row gap-x-10 '>
           <div className='flex-1 flex flex-col gap-y-12 mb-12 lg:mb-0'>
             <div className='flex flex-col'>
             <h2 className='h2 font-secondary text-accent leading-tight'>My Latest <br /> Projects</h2>
            <p className='max-w-sm mb-16'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsum laboriosam. Consequuntur ex maxime ut eos aut fugiat aliquam cumque illum ipsum similique, velit esse.
            </p>
-           <button className='btn w-1/3 btn-sm'> View All Projects </button>
+           <button className='btn p-4 w-1/3 h-full btn-sm'> View All Projects </button>
            </div>
           
          
@@ -23,10 +23,10 @@ function Projects() {
            
             <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt="" />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-               <span className='text-3xl uppercase text-gradient font-secondary'>Front End Website</span>
+            <a href="https://gaming-lilac-kappa.vercel.app/"><span className='text-3xl uppercase text-gradient font-secondary'>Front End Website</span></a>
               </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-800 z-50'>
-              <span className='text-3xl text-white'>Gaming</span>
+            <a href="https://gaming-lilac-kappa.vercel.app/"><span className='text-3xl text-white'>Gaming</span></a>
             </div>
           </div>
           </div>
@@ -38,10 +38,10 @@ function Projects() {
            
             <img className='group-hover:scale-125 transition-all duration-500' src={img2} alt="" />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-               <span className='text-3xl uppercase text-gradient font-secondary'>Front End Website</span>
+            <a href="https://ferrari-eight.vercel.app/"><span className='text-3xl uppercase text-gradient font-secondary cursor-pointer'>Front End Website</span></a>
               </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-800 z-50'>
-              <span className='text-3xl text-white'>Ferrari</span>
+            <a href="https://ferrari-eight.vercel.app/"><span className='text-3xl text-white'>Ferrari</span></a>
             </div>
           </div>
 
@@ -50,10 +50,10 @@ function Projects() {
            
             <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt="" />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-               <span className='text-3xl uppercase text-gradient font-secondary'>Front End Website</span>
+            <a href="https://honey-lemon.vercel.app/"><span className='text-3xl uppercase text-gradient font-secondary'>Front End Website</span></a>
               </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-800 z-50'>
-              <span className='text-3xl text-white'>Honey</span>
+            <a href="https://honey-lemon.vercel.app/"><span className='text-3xl text-white'>Honey</span></a>
             </div>
           </div>
 
