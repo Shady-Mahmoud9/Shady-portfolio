@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from '../assets/gaming.png'
 import img2 from '../assets/ferrari.png'
-import img3 from '../assets/honey.png'
+import img3 from '../assets/portfolio.png'
 function Projects() {
   return (
     <section id='projects' className='section'>
@@ -13,7 +13,7 @@ function Projects() {
            <p className='max-w-sm mb-16'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsum laboriosam. Consequuntur ex maxime ut eos aut fugiat aliquam cumque illum ipsum similique, velit esse.
            </p>
-           <button className='btn p-4 w-1/3 h-full btn-sm'> View All Projects </button>
+           <a href="https://portfolio-one-ecru-41.vercel.app/#Projects"><button className='btn p-4 w-1/3 h-full btn-sm'> View All Projects </button></a>
            </div>
           
          
@@ -32,6 +32,18 @@ function Projects() {
           </div>
 
           <div className='flex-1 flex flex-col  gap-y-14'>
+          
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            <div className='cursor-pointer group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration 300'></div>
+           
+            <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt="" />
+            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+            <a href="https://portfolio-one-ecru-41.vercel.app/"><span className='text-3xl uppercase text-gradient font-secondary'>Front End Website</span></a>
+              </div>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-800 z-50'>
+            <a href="https://portfolio-one-ecru-41.vercel.app/"><span className='text-3xl text-white'>Portfolio</span></a>
+            </div>
+          </div>
         
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             <div className='cursor-pointer group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration 300'></div>
@@ -45,17 +57,6 @@ function Projects() {
             </div>
           </div>
 
-          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
-            <div className='cursor-pointer group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration 300'></div>
-           
-            <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt="" />
-            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-            <a href="https://honey-lemon.vercel.app/"><span className='text-3xl uppercase text-gradient font-secondary'>Front End Website</span></a>
-              </div>
-            <div className='absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-800 z-50'>
-            <a href="https://honey-lemon.vercel.app/"><span className='text-3xl text-white'>Honey</span></a>
-            </div>
-          </div>
 
           </div>
         </div>
