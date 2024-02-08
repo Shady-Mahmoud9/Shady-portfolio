@@ -47,25 +47,25 @@ function Banner() {
           <a href="#contact">
             <button className='btn btn-lg '>Work With Me</button>
            </a>
-                <a href="#!" className='text-gradient btn-link text-2xl'>My portfolio</a>
+                <a href="https://portfolio-one-ecru-41.vercel.app/" className='text-gradient btn-link text-2xl'>My portfolio</a>
                  
           </div>
                   
           <div className='flex text-2xl max-w-max gap-x-6 mx-auto mb-10 lg:mx-0'>
 
-                  <a href="#!">
+                  <a href="https://github.com/Shady-Mahmoud9">
                     <FaGithub className='text-white'/>
                   </a>
 
-                  <a href="#!">
+                  <a href="https://www.linkedin.com/in/shady-mahmoud-600321293/">
                     <FaLinkedin className='text-white'/>
                   </a>
 
-                  <a href="#!">
+                  <a href="https://www.facebook.com/profile.php?id=100074005852470&mibextid=ZbWKwL">
                     <FaFacebook className='text-white'/>
                   </a>
 
-                  <a href="#!">
+                  <a href="https://wa.me/201007501435">
                     <FaWhatsapp className='text-white'/>
                   </a>
 

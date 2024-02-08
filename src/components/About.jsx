@@ -49,8 +49,8 @@ function About() {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg h-full p-4  text-xl'>Contact With Me</button>
-              <a href="#!" className='text-gradient btn-link text-2xl'>My portfolio</a>
+              <a href="#contact"><button className='btn btn-lg h-full p-4  text-xl'>Contact With Me</button></a>
+              <a href="https://portfolio-one-ecru-41.vercel.app/" className='text-gradient btn-link text-2xl'>My portfolio</a>
             </div>
           </div>
         </div>
