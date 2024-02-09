@@ -1,8 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {BsArrowUpRight} from 'react-icons/bs'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Services() {
 
+
+
+  useEffect(() => {
+    AOS.init({
+       
+      easing: 'ease-in-out'
+    });
+  }, []);
   const services =[
     {
       name:"UIUX Design",
@@ -25,12 +35,12 @@ function Services() {
     <section id='services' className='section mt-40'>
   <div className='container mx-auto p-5'>
     <div className='flex flex-col lg:flex-row'>
-      <div className='flex-1 bg-services bg-bottom bg-no-repeat mix-blend-lighten mb-16 lg:mb-0'>
+      <div   data-aos="zoom-in" data-aos-duration='2000' className='flex-1 bg-services bg-bottom bg-no-repeat mix-blend-lighten mb-16 lg:mb-0'>
         <h2 className='h2 text-accent mb-6'>What I Do </h2>
         <h3 className='h3 max-w-[455px]  mb-16'>Hello everybody ,My name is Shady Mahmoud , Iam a Front End Developer , Iam Studying at WeSchool For Applied Technology At The 3th grade .</h3>
       <button className='btn btn-sm'>See my work</button>
       </div>
-      <div className='flex-1'>
+      <div  data-aos="flip-right" data-aos-duration='2000' className='flex-1'>
         <div>
         {services.map((service ,index)=>(
            <div className='flex border-b border-white/20 h-[146px] mb-[32px]' key={index}>

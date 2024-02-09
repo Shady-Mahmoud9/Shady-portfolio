@@ -1,13 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import img1 from '../assets/gaming.png'
 import img2 from '../assets/ferrari.png'
 import img3 from '../assets/portfolio.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Projects() {
+
+  useEffect(() => {
+    AOS.init({
+       
+      easing: 'ease-in-out'
+    });
+  }, []);
   return (
     <section id='projects' className='section'>
       <div className='container mx-auto p-5'>
         <div className='flex items-end flex-col lg:flex-row gap-x-10 '>
-          <div className='flex-1 flex flex-col gap-y-12 mb-12 lg:mb-0'>
+          <div  data-aos="fade-right" data-aos-duration='2000' className='flex-1 flex flex-col gap-y-12 mb-12 lg:mb-0'>
             <div className='flex flex-col'>
             <h2 className='h2 font-secondary text-accent leading-tight'>My Latest <br /> Projects</h2>
            <p className='max-w-sm mb-16'>
@@ -31,7 +40,7 @@ function Projects() {
           </div>
           </div>
 
-          <div className='flex-1 flex flex-col  gap-y-14'>
+          <div  data-aos="zoom-out" data-aos-duration='2000' className='flex-1 flex flex-col  gap-y-14'>
           
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             <div className='cursor-pointer group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration 300'></div>

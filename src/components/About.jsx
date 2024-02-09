@@ -1,24 +1,39 @@
 import { useInView } from 'react-intersection-observer'
 import React from 'react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import CountUp from 'react-countup'
+import { useEffect } from 'react';
 
 function About() {
   const [ref, inView] = useInView({
    threshold:0.5,
   })
+
+
+
+
+
+
+  
+  useEffect(() => {
+    AOS.init({
+       
+      easing: 'ease-in-out'
+    });
+  }, []);
   return (
     <section id='about' className='section lg:mb-0 mb-40' ref={ref}>
       <div className="container mx-auto p-5">
         <div className='flex flex-col lg:flex-row gap-y-10 lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
         
         
-        <div className='flex-1 bg-about bg-contain 
+        <div data-aos="fade-right" data-aos-duration='2000' className='flex-1 bg-about bg-contain 
         bg-no-repeat h-[640px] mix-blend-lighten bg-top'> </div>{/**image */}
 
 
 
-          <div className='flex-1'>
+          <div data-aos="fade-down" data-aos-duration='2000' className='flex-1'>
             <h2 className='h2 text-accent'>About ME</h2>
             <h3 className='text-xl lg:text-4xl mb-5'>Hello everybody ,My name is Shady Mahmoud , Iam a Front End Developer , Iam Studying at WeSchool For Applied Technology At The 3th grade .</h3>
             <p className='text-sm lg:text-base mb-8'>InThisWebsiteIacheivedalotofprojectsforwebsitesIhadacheivedthemwithFrontEndLanguages , Iwill show them Later,Of Cuarse Thiese Projects need alot of skills to make them and I will Show Them,too. Finally I will Make Contact Section To Set Links to My Social Media Accounts to Contact with me if you need Developer.</p>

@@ -1,11 +1,23 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import avatar from '../assets/avatar.svg'
 import {FaGithub,FaLinkedin,FaFacebook,FaWhatsapp} from 'react-icons/fa'
 
 import { TypeAnimation } from 'react-type-animation'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+
 
 function Banner() {
+  useEffect(() => {
+    AOS.init({
+       
+      easing: 'ease-in-out'
+    });
+  }, []);
   return (
     <section id='home' className='min-h-[85vh] lg:min-h-[75vh] flex items-center'>
      
@@ -13,7 +25,7 @@ function Banner() {
       
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
          
-          <div className='flex-1 text-center lg:text-start font-secondary'>
+          <div data-aos="fade-right"  data-aos-duration="1400" className='flex-1 text-center lg:text-start font-secondary'>
             <h1 className='text-3xl font-bold leading-[0.8] lg:text-5xl '>Shady <span>Mahmoud </span></h1>
           
             
@@ -73,7 +85,7 @@ function Banner() {
 
         </div>
 
-        <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[500px]'>
+        <div data-aos="fade-up"  data-aos-duration="1400" className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[500px]'>
              <img src={avatar} alt="" />
         </div>
      </div>
